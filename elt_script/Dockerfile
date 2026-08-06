@@ -1,7 +1,7 @@
 FROM python:3.8-slim
 
 # Install PostgreSQL command-line tools
-RUN apt-get update && apt-get install -y postgresql-client cron
+RUN apt-get update && apt-get install -y postgresql-client-15 cron
 
 # Copy the wrapper script and the ELT script
 COPY start.sh /app/start.sh
